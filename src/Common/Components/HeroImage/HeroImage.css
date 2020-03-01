@@ -1,0 +1,73 @@
+.heroimage {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heroimage h1 {
+  /* Text styles */
+  font-size: 5em;
+
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.heroimage h2 {
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.heroimage .credits {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 4px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco',
+    'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0.2;
+}
+
+.heroimage .credits:hover {
+  opacity: 1;
+}
+
+.heroimage .credits span {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.heroimage .credits span svg {
+  height: 12px;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  top: -2px;
+  fill: white;
+}

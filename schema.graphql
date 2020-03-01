@@ -1,0 +1,14 @@
+type User @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  email: String!
+  givenName: String
+  familyName: String
+  todos: [Todo] @connection(name: "UserTodos")
+}
+
+type Todo @model @auth(rules: [{ allow: owner }]) {
+  user: User @connection(name: "UserTodos")
+  id: ID!
+  text: String
+  completed: Boolean
+}

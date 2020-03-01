@@ -1,0 +1,29 @@
+.iso_box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 440px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translate(-50%, -50%) rotate(-30deg) skew(25deg) scale(0.8);
+}
+
+.iso_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 360px;
+  height: 640px;
+  transition: 0.5s;
+}
+
+.iso_box:hover .iso_layer:nth-child(2) {
+  transform: translate3d(50px, -50px, 25px);
+  box-shadow: -20px 20px 20px 5px rgba(0, 0, 0, 0.75);
+}
+
+.iso_box:active .iso_layer:nth-child(2) {
+  transform: translate3d(50px, -50px, 25px);
+  box-shadow: -20px 20px 20px 5px rgba(0, 0, 0, 0.75);
+}
